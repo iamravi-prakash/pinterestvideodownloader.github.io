@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="http://localhost:5000/static/style.css">
+
+</head>
+
+<body>
+    <!-- code WELCOME30 -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">PinterestVideoDownloader </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link active-link">Home</a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact us</a>
+                    </li> -->
+
+                </ul>
+            </div>
+
+            <!-- <div class="nav__toggle">
+                <i class='bx bx-menu'></i>
+            </div> -->
+            <!-- <a href="#" class="button button_header">English</a> -->
+            <select>
+                <option value="1">English</option>
+            </select>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+
+
+                <div class="home__data">
+                    <h1 class="home__title">Pinterest Video Downloader</h1>
+                    <form class="searchForm" action="/download" method="post">
+                        <label for="video_url">Paste Pinterest Video URL:</label><br>
+                        <input type="text" id="video_url" name="video_url"
+                            placeholder="Enter Video URL Link Like This : https://www.pinterest.com/pin/703546773061416297/"><br><br>
+                        <button class="button" type="submit">Download</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!-- ABOUT US -->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <div class="about__data">
+                    <h2 class="section__title-center">Pinterest Video Downloader</h2>
+                    <p class="about__description">
+                        Pinterest Video Downloader is a free online tool that enables users to easily download videos
+                        from Pinterest. Whether it's a how-to tutorial, a recipe video, or a motivational clip, this
+                        downloader makes it simple to save Pinterest videos in just a few clicks.
+                        By using Pinterest Video Downloader, you can easily access and share your favorite Pinterest
+                        videos offline, without any restrictions or limitations. With its user-friendly interface and
+                        quick download speed, Pinterest Video Downloader is the go-to solution for anyone looking to
+                        download Pinterest videos hassle-free.
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- SECURITY -->
+        <section class="security section container">
+            <div class="security__container grid">
+                <div class="security__data">
+                    <h2 class="section__title-center"> Pinterest Video Downloader vs. Other Video Downloading Tools:
+                        Which One is Better? </h2>
+                    <p class="security__description">
+                        When it comes to downloading videos from Pinterest, there are several video downloading
+                        tools available in the market. However, not all tools are created equal, and choosing the
+                        right one can be challenging. Pinterest Video Downloader stands out from other video downloading
+                        tools due to its user-friendly interface, quick download speed, and ability to save high-quality
+                        videos with ease. Unlike other tools that may have complicated user interfaces or limitations on
+                        downloads, Pinterest Video Downloader provides a simple, easy-to-use solution that enables users
+                        to download Pinterest videos without any restrictions. Whether you're a business owner looking
+                        to
+                        save marketing videos or an individual looking to save a favorite clip,
+                        Pinterest Video Downloader is a reliable and efficient tool that delivers results
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- SERVICES -->
+        <section class="services section container" id="services">
+            <h2 class="section__title">How to use Pinterest Downloader?</h2>
+
+            <div class="services__container grid">
+                <div class="services__data">
+                    <h3 class="services__subtitle">Step 1</h3>
+
+                    <!-- svg__color services__img -->
+
+                    <img class="svg__color services__img" src="img/i1.jpg" alt="Description of the image">
+
+                    <p class="services__description">Copy Video URL </p>
+                    <!-- <div>
+                        <a href="#" class="button button-link">Learn More</a>
+                    </div> -->
+                </div>
+
+                <div class="services__data">
+                    <h3 class="services__subtitle">Step 2</h3>
+                    <img class="svg__color services__img" src="img/i2.jpg" alt="Description of the image">
+
+                    <p class="services__description">Paste The Links</p>
+                    <!-- <div>
+                        <a href="#" class="button button-link">Learn More</a>
+                    </div> -->
+                </div>
+
+                <div class="services__data">
+                    <h3 class="services__subtitle">Step 3</h3>
+                    <img class="svg__color services__img" src="img/i2.jpg" alt="Description of the image">
+                    <p class="services__description">Download Video</p>
+                    <!-- <div>
+                        <a href="#" class="button button-link">Learn More</a>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </section>
+        <!-- APP -->
+        <section class="app section container">
+            <div class="app__container grid">
+                <div class="app__data">
+                    <h2 class="section__title-center"> How to Download Pinterest Videos By Mobile Android, iPhone or Pc
+                    </h2>
+                    <p class="app__description">
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>Use a reliable video downloading app from the App Store or Google Play Store.</li>
+                        <li>Open the Pinterest app and find the video you want to download.</li>
+                        <li>Tap the video to open it in full screen mode.</li>
+                        <li>Tap the "Share" button and select "Copy Link".</li>
+                        <li>Open the video downloading app and paste the link into the designated field.</li>
+                        <li>Choose your preferred video quality and format.</li>
+                        <li>Tap "Download" and wait for the download to finish.</li>
+                        <li>Once the download is complete, you can find the video in your phone's gallery or the
+                            Downloads folder.</li>
+                    </ul>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- CONTACTUS -->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__content">
+                    <h2 class="section__title-center">
+                        Features of Pinterest Video Downloader
+                    </h2>
+                    <p class="contact__description">
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>Easy-to-use interface for a seamless user experience..</li>
+                        <li>Fast download speeds for quick access to your downloaded content.</li>
+                        <li>Supports various file formats to meet your specific needs..</li>
+                        <li>Compatible with multiple platforms and devices for added convenience.</li>
+                        <li>No registration or sign-up required to download videos.</li>
+                        <li>Reliable and secure download process to ensure the safety of your device..</li>
+                        <li>Regular updates and improvements to provide the latest technology and features..</li>
+                    </ul>
+                    </p>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="/" class="footer__logo">Home</a>
+
+            </div>
+
+            <div class="footer__content">
+                <a href="aboutus.html" class="footer__logo">About Us</a>
+                <!-- {{ url_for('aboutus') }} -->
+            </div>
+
+            <div class="footer__content">
+                <a href="contactus.html" class="footer__logo">Contact Us </a>
+            </div>
+
+            <div class="footer__content">
+                <a href="privacypolicy.html" class="footer__logo">Privacy Poilicy</a>
+            </div>
+
+
+
+        </div>
+        <p class="footer__copy">
+            PinterestVideo does not host any pirated or copyright content on its server,
+            and all the videos that you download are downloaded to your system directly from their respective CDN
+            servers.
+        </p>
+
+        <p class="footer__copy">&#169; PinterestVideoDownloader Landing Page. All right reserved</p>
+    </footer>
+
+    <!-- <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a> -->
+
+    <!--=============== MAIN JS ===============-->
+    <!-- <script src="/main.js"></script> -->
+
+</body>
+
+</html>
