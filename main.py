@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request,redirect, url_for
+from flask import Flask, render_template, request,redirect, url_for, url_for,send_from_directory
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -9,6 +9,12 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 @app.route('/')
 def home():
     return render_template('index.html')
+
+#for sitemap
+@app.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
+
 
 @app.route('/redirect-to-index')
 def redirect_to_index():
